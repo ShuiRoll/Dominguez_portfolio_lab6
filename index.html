@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>\
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOMINGUEZ_BIOGAPHY</title>
+
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #6C3BAA;
+            color: #F8F8F8;
+        }
+        
+        .navbar {
+            background: linear-gradient(90deg, #6C3BAA, #7851A9) !important;
+            box-shadow: 0 2px 10px #CDCDCD;
+        }
+        
+        .navbar-brand {
+            color: #FFD700 !important;
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+        
+        .nav-link {
+            color: #CDCDCD !important;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-link:hover {
+            color: #FFD700 !important;
+            text-shadow: 0 0 5px rgba(255, 215, 0, 0.5);
+        }
+        
+        .hero {
+            padding: 120px 0 80px;
+            background: linear-gradient(180deg, #CDCDCD, #D3AF37);
+            color: #FFD700;
+        }
+        
+        .hero h1 {
+            color: #6C3BAA;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        .hero .lead {
+            color: #6C3BAA;
+            font-size: 1.3rem;
+        }
+        
+        .hero .btn-light {
+            background-color: #FFD700 !important;
+            color: #6C3BAA !important;
+            font-weight: bold;
+            border: 2px solid #FFD700;
+            transition: all 0.3s ease;
+        }
+        
+        .hero .btn-light:hover {
+            background-color: #CDCDCD !important;
+            border-color: #F02330;
+            color: #6C3BAA !important;
+        }
+        
+        h2 {
+            color: #FFD700;
+            font-weight: bold;
+            margin-bottom: 2rem;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+        }
+        
+        h4, h5 {
+            color: #F02330;
+            font-weight: bold;
+        }
+        
+        #services {
+            background: linear-gradient(180deg, #523e6a, #7851A9);
+        }
+        
+        #services .card {
+            border: 2px solid #F02330;
+            background: linear-gradient(180deg, #523e6a, #7851A9);
+            color: #CDCDCD;
+            transition: all 0.3s ease;
+        }
+        
+        #services .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 30px rgba(240, 35, 48, 0.4);
+            border-color: #FFD700;
+        }
+        
+        #services .card h4 {
+            color: #FFD700;
+        }
+        
+        #services .card p {
+            color: #CDCDCD;
+        }
+        
+        #projects {
+            background-color: #6C3BAA;
+            background: linear-gradient(180deg, #CDCDCD, #D3AF37);
+        }
+        
+        #projects h2 {
+            color: #6C3BAA;
+        }
+        
+        #projects .card {
+            border: 3px solid #6C3BAA;
+            background: #FFF;
+            transition: all 0.3s ease;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        #projects .card img {
+            height: 250px;
+            object-fit: contain;
+            background-color: #D3AF37;
+        }
+        
+        #projects .card-body {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        #projects .card:hover {
+            box-shadow: 0 12px 30px rgba(155, 28, 67, 0.4);
+            transform: scale(1.05);
+        }
+        
+        #projects .card h5 {
+            color: #6C3BAA;
+        }
+        
+        #projects .card p {
+            color: #6C3BAA;
+        }
+        
+        #contact {
+            background: linear-gradient(180deg, #b398d5, #7851A9);
+        }
+        
+        #contact h2 {
+            color: #FFD700;
+        }
+        
+        #contact .form-control {
+            background-color: rgba(205, 205, 205, 0.1);
+            border: 2px solid #FFD700;
+            color: #CDCDCD;
+        }
+        
+        #contact .form-control::placeholder {
+            color: rgba(205, 205, 205, 0.7);
+        }
+        
+        #contact .form-control:focus {
+            background-color: rgba(205, 205, 205, 0.2);
+            border-color: #F02330;
+            color: #FFD700;
+            box-shadow: 0 0 10px rgba(240, 35, 48, 0.3);
+        }
+        
+        #contact .btn-primary {
+            background: linear-gradient(180deg, #FFD700, #D3AF37);
+            border: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        
+        #contact .btn-primary:hover {
+            background: linear-gradient(180deg, #7851A9, #6C3BAA);
+            color: #FFD700;
+            box-shadow: 0 8px 20px rgba(255, 215, 0, 0.3);
+        }
+        
+        footer {
+            background: linear-gradient(180deg, #6C3BAA, #7851A9);
+            color: #FFD700;
+            border-top: 3px solid #F02330;
+        }
+        
+        footer p {
+            font-weight: bold;
+            letter-spacing: 0.5px;
+        }
+        
+        .section-padding {
+            padding: 80px 0;
+        }
+        
+        .card {
+            border: none;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">MyPortfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <h1 class="display-4">Hi, I'm Shuirou 👋</h1>
+                    <p class="lead">A Beginner Web Developer</p>
+                    <a href="#projects" class="btn btn-light btn-lg mt-3">View My Work</a>
+                </div>
+                <div class="col-md-6 text-center">
+                    <img src="C:/Users/Shuirou/CODES/Portfolio/IMAGES/e0d4faaa-ac26-4d6a-8ca2-d5480f0b5167.jpg" class="img-fluid border border-light rounded" style="max-width:350px;" alt="Profile">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="section-padding">
+        <div class="container">
+            <h2 class="text-center mb-5">My Services</h2>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <div class="card p-4">
+                        <h4>Web Design</h4>
+                        <p>Simple and clean website designs.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-4">
+                        <h4>Frontend Development</h4>
+                        <p>Responsive layouts using Bootstrap.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-4">
+                        <h4>Student Projects</h4>
+                        <p>Beginner-friendly web projects.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section-padding bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">My Projects</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card">
+                        <img src="C:\Users\Shuirou\CODES\Portfolio\IMAGES\Screenshot 2026-02-02 103415.png" class="card-img-top" alt="Project preview">
+                        <div class="card-body">
+                            <h5>Student Login System</h5>
+                            <p>Simple HTML Login Page.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <img src="C:\Users\Shuirou\CODES\Portfolio\IMAGES\Screenshot 2026-02-02 104410.png" class="card-img-top" alt="Project preview">
+                        <div class="card-body">
+                            <h5>Employee Attendance System</h5>
+                            <p>A Full Working Python System.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section-padding">
+        <div class="container">
+            <h2 class="text-center mb-5">Contact Me</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <form>
+                        <input type="text" class="form-control mb-3" placeholder="Name">
+                        <input type="email" class="form-control mb-3" placeholder="Email">
+                        <textarea class="form-control mb-3" rows="4" placeholder="Message"></textarea>
+                        <button class="btn btn-primary w-100">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-center py-4 bg-dark text-white">
+        <p class="mb-0">© 2026 Shuirou | All Rights Reserved</p>
+    </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
